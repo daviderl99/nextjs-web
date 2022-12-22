@@ -1,0 +1,30 @@
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  margin-top: 10%;
+  border-radius: 10px;
+  background-color: #DDF1FF;
+
+  & > * {
+    margin: 20px;
+  }
+}
+
+.field {
+  background-color: #fff;
+}
+
+.loginOptions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+.registerOptions {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9em;
+}
