@@ -10,7 +10,9 @@ export default function Header() {
   return (
     <AppBar position="sticky">
       <Toolbar>
-        <Link href="/">HOME</Link>
+        <Button color="inherit">
+          <Link href="/">HOME</Link>
+        </Button>
         <Box sx={{ flexGrow: 1 }} />
 
         {/* <div className={styles.links}>
