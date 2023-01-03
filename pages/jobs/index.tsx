@@ -8,7 +8,7 @@ export default function Jobs() {
   return (
     <div className={styles.container}>
       {jobs.map(job => (
-        <div className={styles.card}>
+        <div className={styles.card} key={job.id}>
           <div className={styles.main}>
             <Box
               component="img"
