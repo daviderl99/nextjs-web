@@ -1,0 +1,50 @@
+.container {
+  margin: 50px 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f2f8f8;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
+  border-radius: 5px;
+}
+
+.main {
+  display: flex;
+}
+
+.information {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  
+  .title {
+    font-size: 24px;
+  }
+}
+
+.extra {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: end;
+}
+
+.description {
+  padding-top: 20px;
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin: 50px;
+  }
+}

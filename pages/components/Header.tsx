@@ -4,15 +4,16 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
+import HomeIcon from '@mui/icons-material/Home';
 import styles from '../../styles/Header.module.scss';
 
 export default function Header() {
   return (
     <AppBar position="sticky">
       <Toolbar>
-        <Button color="inherit">
-          <Link href="/">HOME</Link>
-        </Button>
+        <Link href="/">
+          <HomeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        </Link>
         <Box sx={{ flexGrow: 1 }} />
 
         {/* <div className={styles.links}>
