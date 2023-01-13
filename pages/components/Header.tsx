@@ -12,7 +12,7 @@ export default function Header() {
     <AppBar position="sticky">
       <Toolbar>
         <Link href="/">
-          <HomeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <HomeIcon sx={{ mr: 1 }} />
         </Link>
         <Box sx={{ flexGrow: 1 }} />
 

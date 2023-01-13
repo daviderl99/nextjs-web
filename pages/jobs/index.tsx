@@ -15,6 +15,8 @@ export default function Jobs() {
               sx={{
                 height: 100,
                 width: 100,
+                mr: 2,
+                mb: 2
               }}
               alt={`${job.company} job offer image`}
               src={`${job.image}`}
@@ -25,15 +27,10 @@ export default function Jobs() {
               <span>{job.location}</span>
               <span>{job.datetime}</span>
             </div>
-            <div className={styles.extra}>
+            <div className={styles.ratingPayrate}>
               <Rating value={job.rating} precision={0.5} readOnly />
               <span>{`${job.payrate.toFixed(2)}€/h`}</span>
             </div>
-          </div>
-          <div className={styles.description}>
-            <span className={styles.title}>Description</span>
-            <br />
-            {job.description}
           </div>
         </div>
       ))}
